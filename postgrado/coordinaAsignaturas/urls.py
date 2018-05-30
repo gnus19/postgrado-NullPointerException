@@ -7,7 +7,6 @@ urlpatterns = [
 	url(r'^$', views.home),
 	url(r'^login/$', login, {'template_name': 'coordinaAsignaturas/login.html'}),
 	url(r'^logout/$', login, {'template_name': 'coordinaAsignaturas/logout.html'}),
+	url(r'^ver/', views.vistaAsignaturas),
 	path('<int:oferta_id>/', views.vistaOfertas, name='oferta')
-
-
 ]

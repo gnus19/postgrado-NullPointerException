@@ -11,10 +11,15 @@ def home(request):
 	return render(request, 'coordinaAsignaturas/login.html', args)
 
 def vistaOfertas(request, oferta_id):
-	return HttpResponse("Estas en la vista de oferta %s" % oferta_id)
+	#return HttpResponse("Estas en la vista de oferta %s" % oferta_id)
 	#ultimasOfertas = Oferta.objects
 	#template = loader.get_template('coordinaAsignaturas/oferta.html')
 	#context = {
 	#	'ultimasOfertas' : ultimasOfertas,
 	#}
 	#return render(request, 'coordinaAsignaturas/oferta.html', context)
+	pass
+
+def vistaAsignaturas(request):
+	args = {'asignaturas' : Asignatura.objects.all()}
+	return render(request, 'coordinaAsignaturas/ver_asignaturas.html', args)
