@@ -8,5 +8,6 @@ urlpatterns = [
 	url(r'^login/$', login, {'template_name': 'coordinaAsignaturas/login.html'}),
 	url(r'^logout/$', login, {'template_name': 'coordinaAsignaturas/logout.html'}),
 	url(r'^ver/', views.vistaAsignaturas),
+	url(r'^agregar/', views.agregarAsignatura),
 	path('<int:oferta_id>/', views.vistaOfertas, name='oferta')
 ]

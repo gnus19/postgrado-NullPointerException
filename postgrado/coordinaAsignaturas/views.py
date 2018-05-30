@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from django.template import loader
 from coordinaAsignaturas.models import *
+from coordinaAsignaturas.forms import *
 # Create your views here.
 def home(request):
 
@@ -23,3 +24,7 @@ def vistaOfertas(request, oferta_id):
 def vistaAsignaturas(request):
 	args = {'asignaturas' : Asignatura.objects.all()}
 	return render(request, 'coordinaAsignaturas/ver_asignaturas.html', args)
+
+def agregarAsignatura(request):
+	args = {'form' : FormularioAsignatura()}
+	return render(request, 'coordinaAsignaturas/agregar_asignatura.html', args)
