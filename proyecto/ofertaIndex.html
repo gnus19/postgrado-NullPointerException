@@ -80,6 +80,7 @@
                             <li><a href="javascript:void(0);"><i class="material-icons">person</i>Perfil</a></li>
                             <li role="seperator" class="divider"></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">business</i>Asignaturas</a></li>
+
                             <li><a href="javascript:void(0);"><i class="material-icons">subject</i>Ofertas Académicas</a></li>
                             <li role="seperator" class="divider"></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">input</i>Cerrar Sesión</a></li>
@@ -98,24 +99,25 @@
                             <span>Inicio</span>
                         </a>
                     </li>
-                    <li class="active">
+                    <li class="">
                         <a href="index.html">
                             <i class="material-icons">business</i>
                             <span>Asignaturas</span>
                         </a>
                     </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="material-icons">toc</i>
-                            <span>Programas</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="ofertaIndex.html">
+                    <li class="active">
+                        <a href="index.html">
                             <i class="material-icons">subject</i>
                             <span>Ofertas</span>
                         </a>
                     </li>
+                    <li class="">
+                        <a href="index.html">
+                            <i class="material-icons">toc</i>
+                            <span>Programas</span>
+                        </a>
+                    </li>
+                    
 
                 </ul>
             </div>
@@ -125,10 +127,10 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>ASIGNATURAS</h2>
+                <h2>OFERTAS</h2>
             </div>
 
-            <!-- Widgets -->
+            <!-- Widgets
             <div class="row clearfix">>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-cyan hover-expand-effect">
@@ -137,7 +139,7 @@
                         </div>
                         <div class="content">
                             <div class="text">TODAS</div>
-                            <div class="number count-to" data-from="0" data-to="25" data-speed="2000" data-fresh-interval="2"></div>
+                            <div class="number count-to" data-from="0" data-to="4" data-speed="2000" data-fresh-interval="2"></div>
                         </div>
                     </div>
                 </div>
@@ -148,7 +150,7 @@
                         </div>
                         <div class="content">
                             <div class="text">ACTIVAS</div>
-                            <div class="number count-to" data-from="0" data-to="18" data-speed="2000" data-fresh-interval="2"></div>
+                            <div class="number count-to" data-from="0" data-to="4" data-speed="2000" data-fresh-interval="2"></div>
                         </div>
                     </div>
                 </div>
@@ -159,18 +161,18 @@
                         </div>
                         <div class="content">
                             <div class="text">DESHABILITADAS</div>
-                            <div class="number count-to" data-from="0" data-to="7" data-speed="2000" data-fresh-interval="1"></div>
+                            <div class="number count-to" data-from="0" data-to="0" data-speed="2000" data-fresh-interval="1"></div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="row clearfix">
                 <!-- Task Info -->
                 <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
                     <div class="card">
                         <div class="header">
-                            <h2>ASIGNATURAS DE LA COORDINACIÓN</h2>
+                            <h2>OFERTAS DEL DEPARTAMENTO</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -190,80 +192,82 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Código</th>
-                                            <th>UC</th>
-                                            <th>Denominación y Programa</th>
-                                            <th>Profesor</th>
-                                            <th>Programa</th>
-                                            <th>Horario</th>
+                                            <th>Descripción</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>EA-7431</td>
-                                            <td>3</td>
-                                            <td><span class="">Evaluación del Impacto ambiental del Desarrollo</span></td>
-                                            <td>Prof. Rafael Lairet</td>
-                                            <td>5601-E</td>
-                                            <td>Martes 7-9</td>
+                                            <td>Oferta para Trimestres Sep-Dic</td>
+                                            <td>
+                                                <button type="button" data-toggle="tooltip" data-placement="top" title="Ver más" data-original-title="Ver más" class="btn bg-amber btn-circle waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">search</i>
+                                                </button>
+                                                <button type="button" data-toggle="tooltip" data-placement="top" title="Editar" data-original-title="Editar" class="btn bg-amber btn-circle waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">edit</i>
+                                                </button>
+                                                <button type="button" data-toggle="tooltip" data-placement="top" title="Quitar" data-original-title="Quitar" class="btn bg-red btn-circle waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">clear</i>
+                                                </button>
+                                            </td>
+
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>EA7522</td>
-                                            <td>3</td>
-                                            <td><span class="">TOPICO II: LOS RIESGOS DEL CAMBIO CLIMÁTICO. EVALUACIÓN Y MANEJO.</span></td>
-                                            <td>ALICIA VILLAMIZAR</td>
-                                            <td>5600-E</td>
-                                            <td>Martes 3-5</td>
+                                            <td>Oferta para Trimestres Ene-Mar</td>
+                                            <td>
+                                                <button type="button" data-toggle="tooltip" data-placement="top" title="Ver más" data-original-title="Ver más" class="btn bg-amber btn-circle waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">search</i>
+                                                </button>
+                                                <button type="button" data-toggle="tooltip" data-placement="top" title="Editar" data-original-title="Editar" class="btn bg-amber btn-circle waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">edit</i>
+                                                </button>
+                                                <button type="button" data-toggle="tooltip" data-placement="top" title="Quitar" data-original-title="Quitar" class="btn bg-red btn-circle waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">clear</i>
+                                                </button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>CE-7288</td>
-                                            <td>3</td>
-                                            <td><span class="">Modelos de políticas  públicas  I</span></td>
-                                            <td>Prof. Marino González</td>
-                                            <td>5600-E</td>
-                                            <td>Martes 4-7</td>
+                                            <td>Oferta para Trimestres Abr-Jul</td>
+                                            <td>
+                                                <button type="button" data-toggle="tooltip" data-placement="top" title="Ver más" data-original-title="Ver más" class="btn bg-amber btn-circle waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">search</i>
+                                                </button>
+                                                <button type="button" data-toggle="tooltip" data-placement="top" title="Editar" data-original-title="Editar" class="btn bg-amber btn-circle waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">edit</i>
+                                                </button>
+                                                <button type="button" data-toggle="tooltip" data-placement="top" title="Quitar" data-original-title="Quitar" class="btn bg-red btn-circle waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">clear</i>
+                                                </button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
-                                            <td>CE-6217</td>
-                                            <td>3</td>
-                                            <td><span class="">Economía Ambiental y de los Recursos Naturales</span></td>
-                                            <td>Prof. Yazenia Frontado</td>
-                                            <td>5601-O</td>
-                                            <td>Lunes 7-9</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>CC-7121</td>
-                                            <td>3</td>
-                                            <td><span class="">Metodología de la Investigación I (Fundamentos de Investigación)</span></td>
-                                            <td>Prof. Sandra Leal</td>
-                                            <td>5601-O</td>
-                                            <td>Martes 3-5</td>
+                                            <td>Intensivos</td>
+                                            <td>
+                                                <button type="button" data-toggle="tooltip" data-placement="top" title="Ver más" data-original-title="Ver más" class="btn bg-amber btn-circle waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">search</i>
+                                                </button>
+                                                <button type="button" data-toggle="tooltip" data-placement="top" title="Editar" data-original-title="Editar" class="btn bg-amber btn-circle waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">edit</i>
+                                                </button>
+                                                <button type="button" data-toggle="tooltip" data-placement="top" title="Quitar" data-original-title="Quitar" class="btn bg-red btn-circle waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">clear</i>
+                                                </button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <nav>
-                                        <ul class="pager">
-                                            <li class="previous">
-                                                <a href="javascript:void(0);" class="waves-effect"><span aria-hidden="true">←</span> Anterior</a>
-                                            </li>
-                                            <li class="next">
-                                                <a href="javascript:void(0);" class="waves-effect">Siguiente <span aria-hidden="true">→</span></a>
-                                            </li>
-                                        </ul>
-                                    </nav>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                     <div class="align-center">
-                        <h5>Añadir Asignatura</h5>
-                        <a href="addAsignatura.html"></a><button type="button" class="btn bg-green btn-circle-lg waves-effect waves-circle waves-float">
+                        <h5>Añadir Nueva Oferta</h5>
+                        <button type="button" class="btn bg-green btn-circle-lg waves-effect waves-circle waves-float">
                             <i class="material-icons">add</i>
                         </button>
                     </div>
